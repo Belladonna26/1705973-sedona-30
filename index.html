@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body container">
   <h1 class="visually-hidden">HTML Academy: Sedona</h1>
   <header>
     <nav>
@@ -89,14 +89,35 @@
         </li>
       </ul>
     </section>
-  </main>
 
-
-  <footer>
     <p>Заинтересовались?</p>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <button type="button">Поиск гостиницы в седоне</button>
+    <div>
+      <form action="https://echo.htmlacademy.ru">
+        <label for="date-time">Дата заезда:</label>
+        <input type="date" name="date" id="date-time">
+        <img src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+
+        <label for="date-time">Дата выезда:</label>
+        <input type="date" name="date" id="date-time">
+        <img src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+
+        <label for="adult-man">Взрослые</label>
+        <input type="number" name="count-adult" id="adult-man">
+
+        <label for="child">Дети</label>
+        <input type="number" name="count-child" id="child">
+
+        <button>Найти</button>
+      </form>
+    </div>
+
     <img src="img/map.png" width="1199" height="474" alt="Карта">
 
+  </main>
+
+  <footer>
     <div>
       <p>#visitSEDONA</p>
       <a href="tel:74956660166">Тел: +7(495) 666-01-66</a>
@@ -127,27 +148,9 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html-академии">
       </a>
     </p>
-
-
-    <modal>
-      <h2>Поиск гостиницы в седоне</h2>
-      <form>
-        <label for="date-time">Дата заезда:</label>
-        <input type="date" name="date" id="date-time">
-
-        <label for="date-time">Дата выезда:</label>
-        <input type="date" name="date" id="date-time">
-
-        <label for="adult-man">Взрослые</label>
-        <input type="number" name="count-adult" id="adult-man">
-
-        <label for="child">Дети</label>
-        <input type="number" name="count-child" id="child">
-
-        <button>Найти</button>
-      </form>
-    </modal>
   </footer>
+
+
 
 </body>
 
