@@ -52,6 +52,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
   color: var(--color-white);
 }
 
@@ -100,7 +101,6 @@
   line-height: 26px;
   font-weight: bold;
 
-  text-transform: uppercase;
   text-decoration: none;
 
   color: var(--color-black);
@@ -123,7 +123,7 @@
 
 .sedona {
   width: 519px;
-  min-height: 272px;
+  min-height: 216px;
 
   margin: 0 auto;
   padding-top: 42px;
@@ -137,7 +137,6 @@
   line-height: 26px;
   font-weight: bold;
   color: var(--color-black);
-  text-transform: uppercase;
 }
 
 .sedona__text {
@@ -145,7 +144,6 @@
   text-align: center;
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--color-mine-shaft);
 }
 
@@ -163,8 +161,15 @@
 }
 
 .reasons-item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 400px;
   height: 256px;
+
+  padding: 49px;
+  box-sizing: border-box;
   background-color: var(--color-half-baked);
 }
 
@@ -178,6 +183,10 @@
 }
 
 .reasons__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 256px;
 }
@@ -186,18 +195,92 @@
   background-color: var(--color-gallery);
 }
 
+.reasons__item_size {
+  height: 330px;
+  padding-top: 160px;
+  padding-bottom: 82px;
+
+  box-sizing: border-box;
+}
+
+.reasons__item_housing {
+  background-image: url("../img/decor/house-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
+.reasons__item_food {
+  background-image: url("../img/decor/hamburger-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
+.reasons__item_souvenirs {
+  background-image: url("../img/decor/gift-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
 .reasons-item__title {
+  margin: 0 0 25px 0;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
   color: var(--color-mine-shaft);
 }
 
 .reasons-item__title_color {
+  text-align: center;
   color: var(--white);
 }
 
 .reasons-item__text {
-color: var(--color-black);
+  margin: 0;
+
+  text-align: center;
+  color: var(--color-black);
 }
 
 .reasons-item__text_color {
   color: var(--white);
+}
+
+.reasons-item__text_margin {
+  margin-bottom: 24px;
+}
+
+/* Offer */
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__title {
+font-size: 30px;
+line-height: 24px;
+font-weight: bold;
+
+color: var(--color-black);
+}
+
+.offer__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: var(--color-black);
+}
+
+.offer__search-button {
+  width: 568px;
+  height: 86px;
+
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--color-pine-cone);
+  color: var(--color-white);
+  text-transform: inherit;
 }
