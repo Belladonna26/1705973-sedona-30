@@ -89,23 +89,23 @@
           </div>
 
           <ul class="sub-reasons__list">
-            <li class="reasons__item reasons__item_background">
-              <h3 class="reasons-item__title">Небольшая площадь</h3>
-              <p class="reasons-item__text">— №3 —</p>
-              <p class="reasons-item__text">Все достопримечательности находятся очень близко</p>
+            <li class="reasons__item reasons__item_style">
+              <h3 class="reasons-item__title">Небольшая<br> площадь</h3>
+              <p class="reasons-item__text reasons-item__text_margin">— №3 —</p>
+              <p class="reasons-item__text">Все достопримечательности<br> находятся очень близко</p>
             </li>
 
 
-            <li class="reasons__item reasons__item_background">
-              <h3 class="reasons-item__title">Красивая дорога</h3>
-              <p class="reasons-item__text">— №4 —</p>
-              <p class="reasons-item__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <li class="reasons__item reasons__item_style">
+              <h3 class="reasons-item__title">Красивая<br> дорога</h3>
+              <p class="reasons-item__text reasons-item__text_margin">— №4 —</p>
+              <p class="reasons-item__text">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
             </li>
 
-            <li class="reasons__item reasons__item_background">
-              <h3 class="reasons-item__title">Мало туристов</h3>
-              <p class="reasons-item__text">— №5 —</p>
-              <p class="reasons-item__text">Большинство едет в гранд каньон и толпится там</p>
+            <li class="reasons__item reasons__item_style">
+              <h3 class="reasons-item__title">Мало<br> туристов</h3>
+              <p class="reasons-item__text reasons-item__text_margin">— №5 —</p>
+              <p class="reasons-item__text">Большинство едет в гранд каньон<br> и толпится там</p>
             </li>
           </ul>
         </li>
@@ -118,20 +118,20 @@
       </p>
       <button class="offer__search-button sedona__info" type="button">Поиск гостиницы в седоне</button>
       <div class="offer__wrapper">
-        <form class="offer__form" action="https://echo.htmlacademy.ru">
+        <form class="offer__form offer__form_visible" action="https://echo.htmlacademy.ru">
           <label class="offer-form__label" for="date-time">Дата заезда:</label>
-          <input type="date" name="date" id="date-time">
-          <img src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+          <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time">
+          <img class="offer-form__calendar-img" src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
 
           <label class="offer-form__label" for="date-time">Дата выезда:</label>
-          <input type="date" name="date" id="date-time">
-          <img src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+          <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time">
+          <img class="offer-form__calendar-img" src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
 
           <label class="offer-form__label" for="adult-man">Взрослые</label>
-          <input type="number" name="count-adult" id="adult-man">
+          <input class="offer-form__field offer-form_humans" type="number" name="count-adult" id="adult-man">
 
           <label class="offer-form__label" for="child">Дети</label>
-          <input type="number" name="count-child" id="child">
+          <input class="offer-form__field offer-form_humans" type="number" name="count-child" id="child">
 
           <button class="button offer__button">Найти</button>
         </form>
