@@ -34,7 +34,7 @@
   margin: -1px;
 }
 
-.offer__form_visible {
+.offer_visible {
   display: block;
 }
 
@@ -316,32 +316,106 @@ color: var(--color-black);
   box-sizing: border-box;
 
   background-color: var(--color-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .offer__form {
+  position: relative;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   color: var(--color-black);
 }
 
+.offer__form-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.offer__form-box_humans {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-bottom: 24px;
+}
+
 .offer-form__field {
   height: 38px;
   margin-bottom: 30px;
+  padding: 6px 0 6px 13px;
 
   border: none;
+  box-sizing: border-box;
   background-color: var(--color-concrete);
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
 }
 
 .offer-form_date-field {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 346px;
+  margin-left: auto;
 }
 
 .offer-form_humans {
   width: 114px;
+  text-align: center;
 }
 
 .offer-form__calendar-img {
   position: absolute;
+  top: 7px;
+  right: 2px;
+
+  border: none;
 }
+
+.offer-form__calendar-img-2 {
+  position: absolute;
+  top: 74px;
+  right: 2px;
+
+  border: none;
+}
+
+.offer-form__label_child {
+  transform: translate(15px);
+}
+
+.offer__button {
+  width: 458px;
+  height:58px;
+
+  border: none;
+
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: inherit;
+
+  background-color: var(--color-half-baked);
+  color: var(--color-white);
+}
+
+.minus {
+  position: absolute;
+  top: 154px;
+  right: 319px;
+
+  width: 12px;
+  height: 3px;
+
+  border: none;
+  background-color: var(--color-silver-chalice);
+}
+
+

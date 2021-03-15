@@ -117,23 +117,30 @@
       <p class="offer__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <button class="offer__search-button sedona__info" type="button">Поиск гостиницы в седоне</button>
-      <div class="offer__wrapper">
-        <form class="offer__form offer__form_visible" action="https://echo.htmlacademy.ru">
-          <label class="offer-form__label" for="date-time">Дата заезда:</label>
-          <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time">
-          <img class="offer-form__calendar-img" src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+      <div class="offer__wrapper offer_visible">
+        <form class="offer__form" action="https://echo.htmlacademy.ru">
+          <div class="offer__form-box">
+            <label class="offer-form__label" for="date-time">Дата заезда:</label>
+            <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time" value="24 апреля 2017">
+            <button class="offer-form__calendar-img" type="button"><img src="img/decor/calendar.svg" alt="Иконка календаря"></button>
 
-          <label class="offer-form__label" for="date-time">Дата выезда:</label>
-          <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time">
-          <img class="offer-form__calendar-img" src="img/decor/calendar.svg" width="21" height="23" alt="Иконка календаря">
+            <label class="offer-form__label" for="date-time">Дата выезда:</label>
+            <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-time" value="4 июля 2017">
+            <button class="offer-form__calendar-img-2" type="button"><img src="img/decor/calendar.svg" alt="Иконка календаря"></button>
+         </div>
 
-          <label class="offer-form__label" for="adult-man">Взрослые</label>
-          <input class="offer-form__field offer-form_humans" type="number" name="count-adult" id="adult-man">
+         <div class="offer__form-box_humans">
+          <label class="offer-form__label" for="adult-man">Взрослые:</label>
+          <input class="offer-form__field offer-form_humans" type="number" name="count-adult" id="adult-man" aria-label="Уменьшить количество взрослых" value="2">
+          <button class="minus" type="button"></button>
 
-          <label class="offer-form__label" for="child">Дети</label>
-          <input class="offer-form__field offer-form_humans" type="number" name="count-child" id="child">
 
-          <button class="button offer__button">Найти</button>
+          <label class="offer-form__label offer-form__label_child" for="child">Дети:</label>
+          <input class="offer-form__field offer-form_humans" type="number" name="count-child" id="child" aria-label="Уменьшить количество детей" value="0">
+          <button class="minus" type="button"></button>
+
+        </div>
+          <button class="offer__button">Найти</button>
         </form>
       </div>
     </div>
