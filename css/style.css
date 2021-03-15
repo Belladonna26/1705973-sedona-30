@@ -38,19 +38,29 @@
   display: block;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 /* Global */
 
 .page {
   height: 100%;
+  background-color: var(--color-concrete);
 }
 
 .page__body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-
+  grid-template-rows: min-content 1fr;
+  position: relative;
   min-height: 100%;
 
   background-color: var(--color-white);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
@@ -339,7 +349,7 @@ color: var(--color-black);
   justify-content: space-between;
   align-items: baseline;
 
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 }
 
 .offer-form__field {
@@ -367,6 +377,7 @@ color: var(--color-black);
 
 .offer-form_humans {
   width: 114px;
+  margin: 0;
   text-align: center;
 }
 
@@ -418,4 +429,70 @@ color: var(--color-black);
   background-color: var(--color-silver-chalice);
 }
 
+/* Footer contacts */
+
+.page__footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 4px;
+
+  width: 1200px;
+  height: 120px;
+
+  padding: 23px 138px 36px 111px;
+  box-sizing: border-box;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+.footer__tel {
+  margin: 0 0 0 8px;
+  text-decoration: none;
+}
+
+.footer__link {
+  margin: 0
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 6px;
+
+  margin: 13px 13px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.button-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: var(--color-half-baked);
+}
+
+.footer__developer-box {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+
+  margin: 17px 3px 0 0;
+}
+
+.footer__developer {
+  margin: 0;
+  color: var(--color-black);
+}
 
