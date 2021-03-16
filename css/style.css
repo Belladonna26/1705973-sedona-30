@@ -1,6 +1,7 @@
 /* Variables */
 :root {
 --color-white: #FFFFFF;
+--color-white-30: rgba(255, 255, 255, 0.3);
 --color-black: #000000;
 --color-black-30: rgba(0, 0, 0, 0.3);
 --color-half-baked: #81B3D2;
@@ -18,6 +19,7 @@
 --color-mine-shaft: #333333;
 --color-mercury: #E5E5E5;
 --color-dove-gray: #666666;
+--color-thunder: #231F20;
 }
 
 
@@ -50,6 +52,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .button {
   border: none;
+  outline: none;
 
   font-family: inherit;
   font-size: inherit;
@@ -133,6 +136,18 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
 
   color: var(--color-black);
+}
+
+.top-bar__link:hover {
+  color: var(--color-half-baked);
+}
+
+.top-bar__link:active {
+  color: var(--color-black-30);
+}
+
+.top-bar__link_active {
+  color: var(--color-pine-cone);
 }
 
 .page__img-wrapper {
@@ -326,11 +341,23 @@ color: var(--color-black);
   box-sizing: border-box;
 
   border: none;
+  outline: none;
   background-color: var(--color-pine-cone);
   color: var(--color-white);
 
   font-family: inherit;
   text-transform: inherit;
+
+  cursor: pointer;
+}
+
+.offer__search-button:hover {
+  background-color: var(--color-kabul);
+}
+
+.offer__search-button:active {
+  background-color: var(--color-mondo);
+  color: var(--color-white-30);
 }
 
 .offer__wrapper {
@@ -383,6 +410,17 @@ color: var(--color-black);
   text-transform: inherit;
 }
 
+.offer-form__field:hover {
+  background-color: var(--color-gallery-darker);
+}
+
+.offer-form__field:focus {
+  border: 2px solid var(--color-mercury);
+  outline: none;
+
+  background-color: var(--color-white);
+}
+
 .offer-form_date-field {
   display: flex;
   justify-content: space-between;
@@ -421,6 +459,7 @@ color: var(--color-black);
   height:58px;
 
   border: none;
+  outline: none;
 
   font-family: inherit;
   font-size: 21px;
@@ -430,6 +469,17 @@ color: var(--color-black);
 
   background-color: var(--color-half-baked);
   color: var(--color-white);
+
+  cursor: pointer;
+}
+
+.offer__button:hover {
+  background-color: var(--color-fountain-blue);
+}
+
+.offer__button:active {
+  background-color: var(--color-steel-blue);
+  color: var(--color-white-30);
 }
 
 .minus {
@@ -523,6 +573,18 @@ color: var(--color-black);
   background-color: var(--color-half-baked);
 }
 
+.button-social:hover {
+  background-color: var(--color-fountain-blue);
+}
+
+.button-social:active {
+  background-color: var(--color-steel-blue);
+}
+
+.button-social__icon:active {
+  opacity: 0.3;
+}
+
 .footer__developer-box {
   display: flex;
   column-gap: 8px;
@@ -534,6 +596,18 @@ color: var(--color-black);
 .footer__developer {
   margin: 0;
   color: var(--color-black);
+}
+
+.footer-developer__img{
+  fill: var(--color-thunder);
+}
+
+.footer-developer__img:hover {
+  fill: var(--color-half-baked);
+}
+
+.footer-developer__img:active {
+  fill: var(--color-pale-slate);
 }
 
 
@@ -705,6 +779,14 @@ font-weight: bold;
   color: var(--color-black);
 }
 
+.sort-type__title {
+ border-bottom: 1px dotted var(--color-half-baked);
+}
+
+.sort-type__title:hover {
+  color: var(--color-half-baked);
+ }
+
 .sort-type__link {
   text-decoration: none;
 
@@ -713,10 +795,29 @@ font-weight: bold;
   color: var(--color-black-30);
 }
 
+.sort-type__link:active {
+  border-bottom: none;
+  color: var(--color-black);
+}
+
+.sort-type__title_checked {
+  border-bottom: none;
+  color: var(--color-half-baked);
+}
+
 .sort__list {
   display: flex;
   column-gap: 12px;
 }
+
+.sort__link:hover {
+ color: var(--color-black);
+}
+
+.sort__link:active,
+.sort__link_checked {
+  color: var(--color-half-baked);
+ }
 
 /* Hotel */
 
@@ -761,8 +862,18 @@ margin-bottom: 15px;
   font-weight: bold;
 
   transform: translateY(-2px);
+
+  text-decoration: none;
   color: var(--color-black);
 }
+
+.hotel-info__title:hover {
+color: var(--color-half-baked);
+}
+
+.hotel-info__title:active {
+  color: var(--color-black-30);
+  }
 
 .hotel-info__text {
   min-width: 110px;
@@ -799,9 +910,31 @@ margin-bottom: 15px;
   height: 27px;
 
   background-color: var(--color-half-baked);
+
+  cursor: pointer;
 }
+
+.button-about:hover {
+background-color: var(--color-fountain-blue);
+}
+
+.button-about:active {
+  background-color: var(--color-steel-blue);
+  color: var(--color-white-30);
+  }
 
 .button-reserve {
   width: 142px;
   background-color: var(--color-pine-cone);
+
+  cursor: pointer;
+}
+
+.button-reserve:hover {
+  background-color: var(--color-kabul);
+}
+
+.button-reserve:active {
+  background-color: var(--color-mondo);
+  color: var(--color-white-30);
 }
