@@ -386,10 +386,16 @@ color: var(--color-black);
   align-items: baseline;
 }
 
+.map {
+  z-index: 1;
+}
+
 .offer__form-box_humans {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  position: relative;
 
   margin-bottom: 54px;
 }
@@ -431,15 +437,30 @@ color: var(--color-black);
 .offer-form_humans {
   width: 114px;
   margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.offer-form__calendar-img {
+.offer-form__calendar-button {
   position: absolute;
   top: 7px;
   right: 2px;
 
   border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.offer-form__calendar-img {
+  fill: var(--color-silver-chalice);
+}
+
+.offer-form__calendar-img:hover {
+  fill: var(--color-black);
+}
+
+.offer-form__calendar-img:active {
+  fill: var(--color-half-baked);
 }
 
 .offer-form__calendar-img-2 {
@@ -448,6 +469,7 @@ color: var(--color-black);
   right: 2px;
 
   border: none;
+  outline: none;
 }
 
 .offer-form__label_child {
@@ -482,17 +504,74 @@ color: var(--color-black);
   color: var(--color-white-30);
 }
 
-.minus {
+.offer__minus {
   position: absolute;
-  top: 154px;
-  right: 319px;
+  top: 8px;
+  left: 118px;
 
-  width: 12px;
-  height: 3px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.offer__minus_1 {
+  position: absolute;
+  top: 8px;
+  left: 347px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.offer__plus {
+  position: absolute;
+
+  right: 239px;
+  top: 11px;
+
+  background-color: transparent;
 
   border: none;
-  background-color: var(--color-silver-chalice);
+  outline: none;
+
+  cursor: pointer;
 }
+
+.offer__plus_1 {
+  position: absolute;
+
+  right: 7px;
+  top: 11px;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  fill: var(--color-silver-chalice);
+}
+
+.minus:hover,
+.plus:hover {
+  fill: var(--color-black);
+}
+
+.minus:active,
+.plus:active {
+  fill: var(--color-half-baked);
+}
+
+
 
 .form__button {
   position: absolute;
