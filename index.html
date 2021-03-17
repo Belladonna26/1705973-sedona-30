@@ -27,8 +27,8 @@
           <a class="top-bar__link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <a>
-        <img class="header__index-img" src="img/logo.svg" width="138" height="70" alt="Логотип Sedona">
+      <a class="header__index-link">
+        <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona">
       </a>
     </nav>
   </header>
@@ -111,13 +111,14 @@
       </ul>
     </section>
 
-    <div class="offer">
+    <section class="offer">
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p class="offer__title">Заинтересовались?</p>
       <p class="offer__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
         седоне
       </p>
       <button class="offer__search-button sedona__info" type="button">Поиск гостиницы в седоне</button>
-      <div class="offer__wrapper offer_visible">
+      <div class="offer__wrapper">
         <form class="offer__form" action="https://echo.htmlacademy.ru">
           <div class="offer__form-box">
             <label class="offer-form__label" for="date-time">Дата заезда:</label>
@@ -137,7 +138,7 @@
 
             <input class="offer-form__field offer-form_date-field" type="text" name="date" id="date-out"
               value="4 июля 2017">
-            <button class="offer-form__calendar-img-2" type="button" aria-label="Выбрать дату выезда">
+            <button class="offer-form__calendar-button_2" type="button" aria-label="Выбрать дату выезда">
               <svg class="offer-form__calendar-img" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -151,15 +152,15 @@
           <div class="offer__form-box_humans">
             <label class="offer-form__label" for="adult-man">Взрослые:</label>
             <input class="offer-form__field offer-form_humans" type="number" name="count-adult" id="adult-man"
-              aria-label="Уменьшить количество взрослых" value="2">
+              aria-label="Выбрать количество взрослых" value="2">
 
-            <button class="offer__minus" type="button">
+            <button class="offer__minus" type="button" aria-label="Уменьшить количество взрослых">
               <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true">
                 <rect width="12" height="3" />
               </svg>
             </button>
-            <button class="offer__plus" type="button">
+            <button class="offer__plus" type="button" aria-label="Увеличить количество взрослых">
               <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -170,14 +171,14 @@
 
             <label class="offer-form__label offer-form__label_child" for="child">Дети:</label>
             <input class="offer-form__field offer-form_humans" type="number" name="count-child" id="child"
-              aria-label="Уменьшить количество детей" value="0">
-            <button class="offer__minus_1" type="button">
+              aria-label="Выбрать количество детей" value="0">
+            <button class="offer__minus_1" type="button" aria-label="Уменьшить количество детей">
               <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true">
                 <rect width="12" height="3" />
               </svg>
             </button>
-            <button class="offer__plus_1" type="button">
+            <button class="offer__plus_1" type="button" aria-label="Увеличить количество детей">
               <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -188,12 +189,12 @@
           <button class="offer__button">Найти</button>
         </form>
       </div>
-    </div>
+    </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта Седоны</h2>
-      <a href="#">
-        <img class="map-img" src="img/map.png" width="1199" height="594" alt="Карта">
+      <a class="map-button" href="#">
+        <img src="img/map.png" width="1199" height="594" alt="Карта">
       </a>
     </section>
   </main>
@@ -226,7 +227,7 @@
 
     <div class="footer__developer-box">
       <p class="footer__developer">Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <svg class="footer-developer__img" width="115" height="41" viewBox="0 0 115 41" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
