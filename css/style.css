@@ -233,7 +233,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 
   width: 400px;
-  height: 256px;
+  min-height: 256px;
 
   box-sizing: border-box;
   padding: 49px;
@@ -257,7 +257,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 
   width: 400px;
-  height: 256px;
+  min-height: 256px;
 
   background-position: top 60px center;
   background-repeat: no-repeat;
@@ -271,7 +271,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .reasons__item_size {
-  height: 330px;
+  min-height: 330px;
 
   box-sizing: border-box;
   padding-top: 160px;
@@ -358,7 +358,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 
   width: 568px;
-  height: 86px;
+  min-height: 86px;
 
   box-sizing: border-box;
   margin: 0;
@@ -393,7 +393,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
 
   width: 568px;
-  height: 395px;
+  min-height: 395px;
 
   box-sizing: border-box;
   padding: 55px;
@@ -522,7 +522,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .offer__button {
   width: 458px;
-  height:58px;
+  min-height: 58px;
+
+  overflow: hidden;
 
   border: none;
   outline: none;
@@ -1251,3 +1253,5 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: var(--color-mondo);
   color: var(--color-white-30);
 }
+
+
